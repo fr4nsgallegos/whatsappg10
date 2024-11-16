@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsappg10/pages/widgets/my_status_widget.dart';
+import 'package:whatsappg10/pages/widgets/status_widget.dart';
 
 class StatusTabPage extends StatelessWidget {
   @override
@@ -18,7 +19,20 @@ class StatusTabPage extends StatelessWidget {
               fontSize: 20,
             ),
           ),
-        )
+        ),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
+        StatusWidget(),
       ],
     );
   }
