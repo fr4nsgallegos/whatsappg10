@@ -5,6 +5,13 @@ void main() {
   runApp(
     MaterialApp(
       home: HomePage(),
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData(
+        appBarTheme: AppBarTheme(
+          color: Color(0xff1D3D2C),
+          foregroundColor: Colors.white,
+        ),
+      ),
     ),
   );
 }
