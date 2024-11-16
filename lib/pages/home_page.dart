@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:whatsappg10/pages/tabs_pages/calls_tab_page.dart';
+import 'package:whatsappg10/pages/tabs_pages/camera_tab_page.dart';
+import 'package:whatsappg10/pages/tabs_pages/chats_tab_page.dart';
+import 'package:whatsappg10/pages/tabs_pages/status_tab_page.dart';
 
 class HomePage extends StatelessWidget {
   @override
@@ -13,6 +17,10 @@ class HomePage extends StatelessWidget {
             IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
           ],
           bottom: TabBar(
+            indicatorColor: Colors.green,
+            indicatorWeight: 4,
+            labelColor: Colors.white,
+            unselectedLabelColor: Colors.grey,
             tabs: [
               Tab(icon: Icon(Icons.camera_alt)),
               Tab(text: "Chats"),
@@ -23,10 +31,10 @@ class HomePage extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
-            Center(child: Text("Camera")),
-            Center(child: Text("Chats Page")),
-            Center(child: Text("Status Page")),
-            Center(child: Text("Calls Page")),
+            CameraTabPage(),
+            ChatsTabPage(),
+            StatusTabPage(),
+            CallsTabPage(),
           ],
         ),
       ),
